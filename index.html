@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weather</title>
+  <link rel="stylesheet" href="./css/style.css" />
+  <!-- <link rel="icon" href="./icon/icon2.svg"> -->
+  <link rel="icon" href="./icon/icon.jpg">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+  <div class="main-container">
+    <form class="search-bar" onsubmit="return false;">
+      <input type="text" placeholder="Search city..." id="tempInput" autocomplete="off" />
+      <button type="submit" class="search-btn" onclick="show()">
+        <span class="search-icon">&#128269;</span>
+      </button>
+    </form>
+    <div class="weather-box">
+      <div class="location-time">
+        <div class="city">
+          <span id="city">Pune</span> <span id="country">IN</span>
+        </div>
+        <div class="datetime" id="datetime">Thursday | 10:10 AM</div>
+      </div>
+      <div class="weather-main">
+        <div id="weather_icon">🌍</div>
+        <div class="status" id="description">Cloudy</div>
+        <div class="temp" id="temp">28&deg;C</div>
+        <div class="feels-like" id="feels-like">Feels Like 30&deg;C</div>
+      </div>
+    </div>
+    <div class="grid-cards">
+      <div class="info-card">
+        <div class="info-icon">🌄</div>
+        <div class="info-label">Sunrise</div>
+        <div class="info-value" id="sunrise">06:15 AM</div>
+      </div>
+      <div class="info-card">
+        <div class="info-icon">🌇</div>
+        <div class="info-label">Sunset</div>
+        <div class="info-value" id="sunset">06:05 PM</div>
+      </div>
+      <div class="info-card">
+        <div class="info-icon">
+          <i class="fa-solid fa-wind" style="color: #74C0FC;"></i>
+        </div>
+        <div class="info-label">Wind</div>
+        <div class="info-value" id="wind">2.53 m/s</div>
+      </div>
+      <div class="info-card">
+        <div class="info-icon">💧</div>
+        <div class="info-label">Humidity</div>
+        <div class="info-value" id="humidity">20%</div>
+      </div>
+    </div>
+  </div>
+  <script src="./js/index.js"></script>
+</body>
+
+</html>
