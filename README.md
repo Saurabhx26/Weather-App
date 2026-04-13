@@ -1,4 +1,4 @@
-git 
+
 # 🌦️ Weather Web Application
 
 A responsive **Weather Web Application** that provides real-time weather information for any city using a public weather API. This project demonstrates API integration, dynamic UI updates, and clean frontend design.
